@@ -6,7 +6,7 @@ import { navData } from '../../constants/data'
 const NavComponent = styled(Box)`
 display:flex;
 justify-content:space-between;
-margin:55px 130px 0 130px;
+margin:55px 50px 0 50px;
 
 `
 const NavContainer = styled(Box)`
