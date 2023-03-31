@@ -13,11 +13,11 @@ __________________________
 * we can use this Syntax for Custom css of HTMl tag in React and material UI
 
 
-`css
+```javascript
 const PlusImg = styled('img')({
     width: 12,
     height: 12,
     marginLeft: 4
 })
-`
+```
 
