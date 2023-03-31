@@ -19,7 +19,10 @@ color:#2874f0;
 background:#fff;
 text-transform:none;
 border-radius:4;
-padding: 5px 30px
+padding: 5px 30px;
+&:hover{
+    background:#fff;
+}
 `
 
 const Container = styled(Box)`
