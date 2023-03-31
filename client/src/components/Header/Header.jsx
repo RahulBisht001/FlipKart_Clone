@@ -8,7 +8,7 @@ import CustomButtons from './CustomButtons'
 // Custom css for material UI Components
 const StyledHeader = styled(AppBar)`
 background:#2874f0;
-height:55px
+height:55px;
 `
 
 const CustomBox = styled(Box)`
