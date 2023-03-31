@@ -28,3 +28,15 @@ const PlusImg = styled('img')({
 })
 ```
 
+
+
+## Libraries Used in the Project
+___________________________________
+
+### react-multi-carousel
+* installation Link :
+``` npm i react-multi-carousel ```
+
+* Resource Link :
+https://www.npmjs.com/package/react-multi-carousel 
+
