@@ -1,6 +1,7 @@
 # FlipKart Clone
 __________________________
 
+![logo](https://github.com/RahulBisht001/FlipKart_Clone/blob/main/Filpkart%20Img.jpg)
 
 
 ## 🎯 Learnings from the Projects:
