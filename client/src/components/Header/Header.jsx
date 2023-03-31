@@ -1,6 +1,9 @@
 import React from 'react'
 
 import { AppBar, Toolbar, Box, Typography, styled } from '@mui/material'
+import Search from './Search'
+import CustomButtons from './CustomButtons'
+
 
 // Custom css for material UI Components
 const StyledHeader = styled(AppBar)`
@@ -25,6 +28,11 @@ const PlusImg = styled('img')({
     marginLeft: 4
 })
 
+const CustomButtonWrapper = styled(Box)`
+margin:0 3% 0 auto;
+`
+
+
 
 
 const Header = () => {
@@ -35,7 +43,7 @@ const Header = () => {
     return (
         <>
             <StyledHeader>
-                <Toolbar>
+                <Toolbar style={{ minHeight: 55 }}>
                     <CustomBox>
                         <img src={logoURL} alt="Flipkart Logo"
                             style={{ width: 80 }}
@@ -48,6 +56,15 @@ const Header = () => {
                             <PlusImg src={subURL} alt="" />
                         </Box>
                     </CustomBox>
+
+                    {/* Component Import */}
+                    <Search />
+
+                    <CustomButtonWrapper>
+                        {/* Component Import */}
+                        <CustomButtons />
+                    </CustomButtonWrapper>
+
                 </Toolbar>
             </StyledHeader>
         </>
