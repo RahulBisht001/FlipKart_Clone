@@ -40,3 +40,16 @@ ___________________________________
 * Resource Link :
 https://www.npmjs.com/package/react-multi-carousel 
 
+
+
+
+
+## Error Occured in the Project
+
+### DataBase Errors
+* `user is not allowed to do action [insert] on [test.products]`
+This is an Classical Error while setting the connection with the DataBase.
+
+Solution__
+Go to DataBase and check the User Roles 
+Replace it with ReadAndWrite option.
