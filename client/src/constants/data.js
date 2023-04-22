@@ -1,3 +1,4 @@
+import img1 from './img/img1.webp'
 
 export const navData = [
     { url: 'https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100', text: 'Top Offers' },
@@ -18,5 +19,5 @@ export const bannerData = [
     { id: 2, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50' },
     { id: 3, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/f6202f13b6f89b03.jpg?q=50' },
     { id: 4, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50' },
-    { id: 5, url: 'https://rukminim1.flixcart.com/fk-p-flap/844/140/image/797a191301cde1fc.jpg?q=50' }
+    { id: 5, url: img1 }
 ]

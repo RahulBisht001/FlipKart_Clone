@@ -1,20 +1,31 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import defaultData from './default.js'
+import cors from 'cors'
+import bodyParser from 'body-parser'
 
+import Router from './routes/routes.js'
+import defaultData from './default.js'
 import Connection from './database/db.js'
 
-
 const app = express()
+dotenv.config()
+
 
 const PORT = 8000
-
 const USERNAME = process.env.DB_USERNAME
 const PASSWORD = process.env.DB_PASSWORD
 
-app.get('/', (req, res) => {
-    res.send('<h1>HI Rahul</h1>')
-})
+const corsOption = {
+    credentials: true,
+    origin: ['http://localhost:3000']
+}
+app.use(cors(corsOption))
+
+//? we Can uses [app.use(express.json())] or body-parser Both , no issue
+// app.use(express.json())
+app.use(bodyParser.json({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use('/', Router)
 
 
 Connection(USERNAME, PASSWORD)

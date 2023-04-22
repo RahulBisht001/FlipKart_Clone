@@ -51,5 +51,6 @@ https://www.npmjs.com/package/react-multi-carousel
 This is an Classical Error while setting the connection with the DataBase.
 
 Solution__
+Resource Link : https://tinyl.io/8E3U
 Go to DataBase and check the User Roles 
 Replace it with ReadAndWrite option.
