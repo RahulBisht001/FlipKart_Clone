@@ -12,17 +12,17 @@ import { DataContext } from '../../context/DataProvider'
 
 
 const Component = styled(Box)`
-height:70vh;
-width:90vh;
+height:75vh;
+width:98vh;
 padding: 0;
 `
 
 const Image = styled(Box)`
 background:#2874f0 url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png)
-no-repeat center 85%;
-height:85%;
-width:30%;
-padding: 45px 35px;
+no-repeat center 80%;
+height:81%;
+width:25%;
+padding: 40px 30px;
  & > p, & > h5 {
     color: #FFFFFF;
  }
@@ -31,7 +31,7 @@ padding: 45px 35px;
 const Wrapper = styled(Box)`
 display:flex;
 flex-direction:column;
-padding:25px 35px;
+padding:25px 30px;
 flex:1;
 & > div, &>button , &>p{
     margin-top:10px;
@@ -169,7 +169,8 @@ const LoginDialog = ({ open, setOpen }) => {
                 sx: {
                     maxWidth: 'unset'
                 }
-            }} >
+            }}
+        >
             <Component>
                 <Box style={{ display: 'flex', height: '100%' }}>
                     <Image>
