@@ -27,11 +27,18 @@ const responsive = {
 };
 
 
-const Image = styled('img')({
+const Image = styled('img')(({ theme }) => ({
     width: '100%',
-    height: 280
-})
-
+    height: 280,
+    [theme.breakpoints.down('md')]: {
+        objectFit: 'cover',
+        height: 180
+    },
+    [theme.breakpoints.down('sm')]: {
+        objectFit: 'cover',
+        height: 100
+    }
+}));
 
 
 const Banner = () => {
@@ -41,7 +48,6 @@ const Banner = () => {
                 responsive={responsive}
                 swipeable={false}
                 draggable={false}
-                showDots={true}
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={2000}

@@ -9,8 +9,13 @@ const DefaultData = async () => {
             await Product.insertMany(products)
             console.log('Data Inserted in DataBase Successfully')
         }
-        else
+        else {
+            //! I have used this below code (delete code) in the development mode
+            //! for the ease of deleting all the data from collection intentionally
+            // await Product.deleteMany()
             console.log('Data Already Inserted in the DataBase')
+        }
+
     } catch (err) {
         console.log("ERROR While Inserting Data")
         console.log(err.message)
