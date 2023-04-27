@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css';
-
 import Countdown from 'react-countdown';
 
 import { Box, Typography, Button, Divider, styled } from '@mui/material'
@@ -67,8 +67,9 @@ letter-spacing:.2ch;
 const Image = styled('img')({
     width: 'auto',
     height: 180,
+    transition: '0.2s all ease-in-out',
     '&:hover': {
-        scale: 1.1
+        transform: 'scale(1.1) translateY(-5px)',
     },
 })
 
@@ -128,31 +129,34 @@ const Slide = ({ products, title, timer }) => {
                 >
                     {
                         products.map(product => (
-                            <Box
-                                textAlign="center"
-                                style={{ padding: "10px 10px", margin: "10px" }}
-                            >
-                                <Image
-                                    src={product.url}
-                                />
-                                <Text
-                                    style={{ fontWeight: 600, color: '#212125' }}
+                            //! yt: he used product.id here
+                            <Link to={`product/${product._id}`} style={{ textDecoration: 'none' }}>
+                                <Box
+                                    textAlign="center"
+                                    style={{ padding: "10px 10px", margin: "10px" }}
                                 >
-                                    {product.title.shortTitle}
-                                </Text>
+                                    <Image
+                                        src={product.url}
+                                    />
+                                    <Text
+                                        style={{ fontWeight: 600, color: '#212125' }}
+                                    >
+                                        {product.title.shortTitle}
+                                    </Text>
 
-                                <Text
-                                    style={{ color: 'green' }}
-                                >
-                                    {product.discount}
-                                </Text>
+                                    <Text
+                                        style={{ color: 'green' }}
+                                    >
+                                        {product.discount}
+                                    </Text>
 
-                                <Text
-                                    style={{ color: '#212121', opacity: '.7', fontSize: '13px' }}
-                                >
-                                    {product.tagline}
-                                </Text>
-                            </Box>
+                                    <Text
+                                        style={{ color: '#212121', opacity: '.7', fontSize: '13px' }}
+                                    >
+                                        {product.tagline}
+                                    </Text>
+                                </Box>
+                            </Link>
                         ))
                     }
                 </Carousel>

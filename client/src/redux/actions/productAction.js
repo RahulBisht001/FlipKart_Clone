@@ -16,3 +16,20 @@ export const getProducts = () => async (dispatch) => {
         console.log(err)
     }
 }
+
+export const getProductDetails = (id) => async (dispatch) => {
+
+    try {
+        dispatch({ type: actionType.GET_PRODUCT_DETAILS_REQUEST })
+        const { data } = await axios.get(`${URL}/product/${id}`)
+        console.log(data)
+
+        dispatch({ type: actionType.GET_PRODUCT_DETAILS_SUCCESS, payload: data })
+
+    } catch (err) {
+
+        dispatch({ type: actionType.GET_PRODUCT_DETAILS_FAIL, payload: err })
+        console.log("Error while Calling getProductsDetails from ProductAction.js")
+        console.log(err)
+    }
+}

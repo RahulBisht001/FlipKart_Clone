@@ -12,17 +12,14 @@ export const navData = [
     { url: 'https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100', text: 'Two Wheelers' }
 ];
 
-
 export const bannerData = [
-    { id: 1, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50' },
-    { id: 2, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50' },
-    { id: 3, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/f6202f13b6f89b03.jpg?q=50' },
+    { id: 1, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/4ccdde64988d8d42.jpg?q=50' },
+    { id: 2, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/75a15c3e19c3f7de.jpg?q=50' },
+    { id: 3, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/9112495626122c11.jpg?q=50' },
     { id: 4, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/8155cb6a4212d658.jpg?q=50' },
-    { id: 5, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/d1cc2109526bf313.jpg?q=50' },
+    { id: 5, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/58aa61b739736463.jpeg?q=50' },
     { id: 6, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/a37c7aa9669fcd4c.jpg?q=50' },
-    { id: 7, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/7ebae6ab4be6cda7.jpg?q=50' },
-    { id: 8, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/f94d7b10a30a1e67.jpg?q=50' },
-    { id: 9, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/9a3a734aef20053a.jpg?q=50' }
+    { id: 7, url: 'https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/56deb003ccb3ee34.jpg?q=50' },
 ]
 
 

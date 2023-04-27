@@ -1,8 +1,9 @@
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
+import Detailview from './components/Details/Detailview'
 
 
 import { Box } from '@mui/material'
@@ -24,17 +25,29 @@ const theme = createTheme({
 
 function App() {
   return (
+    <DataProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={theme}>
 
-    <ThemeProvider theme={theme}>
 
-      <DataProvider>
-        <Header />
-        <Box style={{ marginTop: 55 }}>
-          <Home />
-        </Box>
-      </DataProvider >
+          <Header />
+          <Box style={{ marginTop: 55 }}>
+            <Routes>
+              <Route
+                path='/'
+                element={<Home />}
+              />
+              <Route
+                path='/product/:id'
+                element={<Detailview />}
+              />
+            </Routes>
 
-    </ThemeProvider>
+          </Box>
+
+        </ThemeProvider>
+      </BrowserRouter>
+    </DataProvider >
   );
 }
 

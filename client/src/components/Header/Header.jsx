@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 import { AppBar, Toolbar, Box, Typography, styled } from '@mui/material'
 import Search from './Search'
@@ -11,9 +13,11 @@ background:#2874f0;
 height:55px;
 `
 
-const CustomBox = styled(Box)`
+const CustomBox = styled(Link)`
 margin-left:12%;
 line-height:0;
+text-decoration:none;
+color:inherit;
 
 `
 
@@ -44,7 +48,7 @@ const Header = () => {
         <>
             <StyledHeader>
                 <Toolbar style={{ minHeight: 55 }}>
-                    <CustomBox>
+                    <CustomBox to={'/'} >
                         <img src={logoURL} alt="Flipkart Logo"
                             style={{ width: 80 }}
                         />
